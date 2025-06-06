@@ -322,8 +322,8 @@ html, body {
     width: 100%;
     margin-top: 100px;
     margin-bottom: 15rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-sizing: border-box;
 }
 
@@ -390,6 +390,11 @@ html, body {
 }
 
 @media (min-width: 992px) {
+    .grid-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
     .grid-title {
         position: absolute;
         top: 0;
