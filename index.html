@@ -8,19 +8,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="assets/home.js"></script>
     </head>
     <body>
-        <div>
+        <div class="relative">
+            <div class="loader">
+                <p class="loader-text">ARBORÉA</p>
+            </div>
             <nav class="navbar">
-                <div class="navbar__logo">ARBORÉA</div>
+                <div class="navbar__logo"><a href="index.html" class="">ARBORÉA</a></div>
                 <button class="navbar-burger">☰</button>
                 <ul class="navbar__links">
-                    <li><a class="navbar-link" href="#">HOME</a></li>
-                    <li><a class="navbar-link" href="#">ANGEBOT</a></li>
-                    <li><a class="navbar-link" href="#">WELLNESS</a></li>
-                    <li><a class="navbar-link" href="#">ÜBER UNS</a></li>
+                    <li><a class="navbar-link active" href="index.html">HOME</a></li>
+                    <li><a class="navbar-link" href="angebot.html">ANGEBOT</a></li>
+                    <li><a class="navbar-link" href="wellness.html">WELLNESS</a></li>
+                    <li><a class="navbar-link" href="ueber_uns.html">ÜBER UNS</a></li>
                 </ul>
-                <button class="navbar__button">KONTAKT</button>
+                <div class="navbar__button">
+                    <a href="kontakt.html">KONTAKT</a>
+                </div>
+
             </nav>
             <div class="container">
                 <div class="video-container" >
@@ -30,7 +37,7 @@
                 </div>
                 <div class="image-overlay"></div>
                 <div id="text" class="text-container opacity-0">
-                    <p class="title title-grow">Willkommen im ARBORÉA</p>
+                    <p class="title title-grow">ARBORÉA</p>
                     <p class="subtitle">Zurück zur Natur – zurück zu dir.</p>
                 </div>
             </div>
@@ -41,13 +48,13 @@
                         <img class="scroll grid-image" src="./assets/media/cabin.jpg">
                     </div>
                     <div class="grid-2 relative">
-                        <p class="grid-title scroll">Title</p>
+                        <p class="grid-title scroll">Angebot</p>
                         <p class="grid-text scroll">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
                     <div class="grid-3 relative">
-                        <p class="grid-title scroll">Title</p>
+                        <p class="grid-title scroll">Wellness</p>
                         <p class="grid-text scroll">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
@@ -61,12 +68,17 @@
                         <img class="z-2 scroll grid-image" src="./assets/media/sauna.jpg">
                     </div>
                     <div class="grid-6 relative">
-                        <p class="grid-title scroll">Title</p>
+                        <p class="grid-title scroll">Über uns</p>
                         <p class="grid-text scroll">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
                 </div>
+            </div>
+            <div class="footer-blur"></div>
+            <div class="footer">
+                <div class="footer-logo">ARBORÉA</div>
+                <div class="footer-copyright">© 2025 <a class="mail-link" href="mailto:j.albers.inf24@stud.bbbaden.ch">Jan Albers</a></div>
             </div>
         </div>
         <script>

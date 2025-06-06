@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ARBORÉA</title>
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="relative">
+    <nav class="navbar">
+        <div class="navbar__logo">ARBORÉA</div>
+        <button class="navbar-burger">☰</button>
+        <ul class="navbar__links">
+            <li><a class="navbar-link" href="index.html">HOME</a></li>
+            <li><a class="navbar-link active" href="angebot.html">ANGEBOT</a></li>
+            <li><a class="navbar-link" href="wellness.html">WELLNESS</a></li>
+            <li><a class="navbar-link" href="ueber_uns.html">ÜBER UNS</a></li>
+        </ul>
+        <div class="navbar__button">
+            <a href="kontakt.html">KONTAKT</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="video-container" >
+            <video autoplay loop muted playsinline class="video">
+                <source src="assets/media/wald.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="image-overlay"></div>
+    </div>
+
+
+    <div class="footer-blur"></div>
+    <div class="footer">
+        <div class="footer-logo">ARBORÉA</div>
+        <div class="footer-copyright">© 2025 <a class="mail-link" href="mailto:j.albers.inf24@stud.bbbaden.ch">Jan Albers</a></div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('.navbar-link').forEach(el => {
+            el.style.setProperty('--label', `"${el.textContent}"`);
+        });
+    })
+</script>
+</body>
+</html>
