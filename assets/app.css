@@ -29,71 +29,95 @@ html, body {
 }
 
 .navbar__links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.navbar__links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    cursor: pointer;
+    display: none;
 }
 
 .navbar__button {
-    background-color: #ffd700;
+    display: none;
+}
+
+.navbar-burger {
+    background-color: #395439;
     border: none;
-    color: black;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    user-select: none;
 }
 
-.navbar__button:hover {
-    background-color: #e6c200;
-}
+@media (min-width: 768px) {
+    .navbar__links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        justify-content: center;
+    }
 
-.navbar-link {
-    height: 30px;
-    padding: 5px 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.navbar-link::before {
-    content: var(--label, 'Error');
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    margin-bottom: -100%;
-    background-color: black;
-    color: white;
-    border-radius: 20px 20px 20px 20px;
-    transition: margin-bottom 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    .navbar__links li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
 
-.navbar-link:hover::before {
-    margin-bottom: 0;
+    .navbar__button {
+        display: block;
+        background-color: #395439;
+        border: none;
+        color: white;
+        padding: 0.7rem 1.4rem;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar__button:hover {
+        background-color: #253625;
+    }
+
+    .navbar-burger {
+        display: none;
+    }
+
+    .navbar-link {
+        height: 30px;
+        padding: 5px 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-link::before {
+        content: var(--label, 'Error');
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-bottom: -100%;
+        background-color: #395439;
+        color: white;
+        border-radius: 20px 20px 20px 20px;
+        transition: margin-bottom 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-link:hover::before {
+        margin-bottom: 0;
+    }
 }
 
 .container {
@@ -174,17 +198,30 @@ html, body {
 }
 
 @media (min-width: 640px) {
-    .title { font-size: 3rem; }
-    .subtitle { font-size: 1.5rem; }
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) {
-    .title { font-size: 4rem; }
-    .subtitle { font-size: 1.75rem; }
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.75rem;
+    }
 }
 
 @media (min-width: 1536px) {
-    .title { font-size: 5rem; }
+    .title {
+        font-size: 5rem;
+    }
+
     .subtitle {
         font-size: 2rem;
         max-width: 50%;
@@ -201,10 +238,10 @@ html, body {
 }
 
 .muster {
-    border-radius: 18% 82% 82% 18% / 18% 67% 33% 82% ;
+    border-radius: 18% 82% 82% 18% / 18% 67% 33% 82%;
     background-color: rgb(37, 54, 37);
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     margin-top: -10%;
     margin-left: -5%;
@@ -213,10 +250,10 @@ html, body {
 }
 
 .muster-2 {
-    border-radius: 86% 14% 13% 87% / 33% 67% 33% 67% ;
+    border-radius: 86% 14% 13% 87% / 33% 67% 33% 67%;
     background-color: rgb(55, 82, 55);
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     margin-top: -10%;
     margin-right: -5%;
