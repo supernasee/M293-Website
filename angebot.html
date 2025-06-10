@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ARBORÉA</title>
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/css/angebot.css">
+    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </head>
 <body>
 <div class="relative">
@@ -26,15 +29,107 @@
     </nav>
     <div class="container">
         <div class="video-container" >
-            <video autoplay loop muted playsinline class="video">
-                <source src="assets/media/wald.mp4" type="video/mp4" />
-            </video>
+            <img src="assets/media/cabin.jpg" alt="Foto einer modernen kleinen Hütte mitten im Wald" class="video">
         </div>
         <div class="image-overlay"></div>
+        <p class="site-title">Angebot</p>
     </div>
-
-
-    <div class="footer-blur"></div>
+    <div class="content-container">
+        <div class="content-padding">
+            <p class="content-title">Übernachtungsmöglichkeiten</p>
+            <p class="content-text">Entdecken Sie bei uns verschiedene Unterkunftsarten, die Komfort und Naturerlebnis perfekt verbinden. Ob rustikale Holzhütten, luxuriöse Baumhaussuiten oder moderne Zimmer im Haupthaus – hier findet jeder die ideale Unterkunft für einen entspannten Aufenthalt inmitten der Natur.</p>
+            <div class="grid">
+                <div class="card-1">
+                    <div class="card-container">
+                        <section id="image-carousel-1" class="splide card-image" aria-label="Beautiful Images">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="assets/media/cabin.jpg" alt="Foto einer modernen kleinen Hütte mitten im Wald.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/fire-place.jpg" alt="Foto eines gemütlichen Kamins mit noch vorhandener Glut.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/whirlpool.jpg" alt="Foto eines Whirlpools mit glasklarem Türkisem Wasser.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/breakfast.jpg" alt="Foto eines gut aussehenden Brotes mit Marmelade und frischen Blau und Erdbeeren.">
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <p class="content-title text-left">Wood Cabins</p>
+                        <p class="content-text text-left">Abgeschiedene Holzhütten mitten im Wald für absolute Ruhe und Naturverbundenheit. Perfekt für Paare oder Alleinreisende, die sich zurückziehen und entschleunigen wollen.</p>
+                        <ul class="custom-list content-text text-left">
+                            <li>Eigener Kamin</li>
+                            <li>Große Panoramafenster mit Waldblick</li>
+                            <li>Outdoor-Whirlpool</li>
+                            <li>Bio-Frühstück inklusive</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <div class="card-container">
+                        <section id="image-carousel-2" class="splide card-image" aria-label="Beautiful Images">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="assets/media/bedroom.jpg" alt="Foto eines weissen, luxeriösen Doppel Himmelbett mit Kronleuchter.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/hammock.jpg" alt="Foto einer entspannten Frau in einer Hängematte im Wald.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/korb.jpg" alt="Foto eines reichlich gefüllten Tablettes mit Kaffe, Saft, Müsli und Toast.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/treehouse.jpg" alt="Foto eines hölzernen Baumhauses an einem Baum im Wald.">
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <p class="content-title text-left">Tree Suites</p>
+                        <p class="content-text text-left">Luxus über dem Boden: Unsere Baumhaus-Suiten bieten Komfort inmitten der Baumwipfel. Ideal für einen besonderen Aufenthalt mit Stil.</p>
+                        <ul class="custom-list content-text text-left">
+                            <li>Schlafbereich mit Himmelbett</li>
+                            <li>Terrasse mit Hängematte</li>
+                            <li>Frühstückskorb jeden Morgen</li>
+                            <li>Regendusche & Naturkosmetik</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-3">
+                    <div class="card-container">
+                        <section id="image-carousel-3" class="splide card-image" aria-label="Beautiful Images">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="assets/media/bed.jpg" alt="Foto eines doppelbetes mit blauer Sitzbank davor.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/bath.jpg" alt="Foto eines modernen, weissen Bades mit Badewanne, WC und Aufhängestangen.">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/media/yoga.jpg" alt="Foto einer Frau im Wasser eines Pools stehend, daneben Liegen und im Hintergrund schöne Landschaft.">
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <p class="content-title text-left">Forest Rooms</p>
+                        <p class="content-text text-left">Moderne Hotelzimmer im Haupthaus – schlicht, gemütlich und stilvoll. Für alle, die Komfort suchen, aber trotzdem naturnah wohnen möchten.</p>
+                        <ul class="custom-list content-text text-left">
+                            <li>Kingsize-Bett mit Naturmatratze</li>
+                            <li>Balkon mit Waldblick</li>
+                            <li>Schreibtisch & schnelles WLAN</li>
+                            <li>Kostenloser Zugang zum Spa</li>
+                            <li>Teestation mit regionalen Kräutern</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="footer-logo">ARBORÉA</div>
         <div class="footer-copyright">© 2025 <a class="mail-link" href="mailto:j.albers.inf24@stud.bbbaden.ch">Jan Albers</a></div>
@@ -44,6 +139,15 @@
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.navbar-link').forEach(el => {
             el.style.setProperty('--label', `"${el.textContent}"`);
+        });
+
+        document.querySelectorAll('.splide').forEach(function (el) {
+            new Splide(el, {
+                type   : 'loop',
+                perPage: 1,
+                perMove: 1,
+                focus  : 'center'
+            }).mount();
         });
     })
 </script>
