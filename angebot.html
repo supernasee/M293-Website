@@ -15,18 +15,30 @@
 <body>
 <div class="relative">
     <nav class="navbar">
-        <div class="navbar__logo">ARBORÉA</div>
-        <button class="navbar-burger">☰</button>
+        <div class="navbar__logo"><a href="index.html" class="">ARBORÉA</a></div>
+        <button id="hamburger-button" class="navbar-burger">☰</button>
         <ul class="navbar__links">
-            <li><a class="navbar-link" href="index.html">HOME</a></li>
-            <li><a class="navbar-link active" href="angebot.html">ANGEBOT</a></li>
+            <li><a class="navbar-link active" href="index.html">HOME</a></li>
+            <li><a class="navbar-link" href="angebot.html">ANGEBOT</a></li>
             <li><a class="navbar-link" href="wellness.html">WELLNESS</a></li>
             <li><a class="navbar-link" href="ueber_uns.html">ÜBER UNS</a></li>
         </ul>
         <div class="navbar__button">
             <a href="kontakt.html">KONTAKT</a>
         </div>
+
     </nav>
+    <div id="side-nav" class="side-nav relative">
+        <p class="sidenav-title">ARBORÉA</p>
+        <p id="close-button" class="close-button">x</p>
+        <ul class="sidenav-links">
+            <li><a class="navbar-link active" href="index.html">HOME</a></li>
+            <li><a class="navbar-link active" href="angebot.html">ANGEBOT</a></li>
+            <li><a class="navbar-link active" href="wellness.html">WELLNESS</a></li>
+            <li><a class="navbar-link active" href="ueber_uns.html">ÜBER UNS</a></li>
+            <li><a class="navbar-link active" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+    </div>
     <div class="container">
         <div class="video-container" >
             <img src="assets/media/cabin.jpg" alt="Foto einer modernen kleinen Hütte mitten im Wald" class="video">
@@ -61,7 +73,7 @@
                         </section>
                         <p class="content-title text-left">Wood Cabins</p>
                         <p class="content-text text-left">Abgeschiedene Holzhütten mitten im Wald für absolute Ruhe und Naturverbundenheit. Perfekt für Paare oder Alleinreisende, die sich zurückziehen und entschleunigen wollen.</p>
-                        <ul class="custom-list content-text text-left">
+                        <ul class="custom-list text-left">
                             <li>Eigener Kamin</li>
                             <li>Große Panoramafenster mit Waldblick</li>
                             <li>Outdoor-Whirlpool</li>
@@ -89,6 +101,7 @@
                                 </ul>
                             </div>
                         </section>
+                        <p class="attribution">Image by <a href="https://www.freepik.com" target="_blank" rel="noopener">Freepik</a></p>
                         <p class="content-title text-left">Tree Suites</p>
                         <p class="content-text text-left">Luxus über dem Boden: Unsere Baumhaus-Suiten bieten Komfort inmitten der Baumwipfel. Ideal für einen besonderen Aufenthalt mit Stil.</p>
                         <ul class="custom-list content-text text-left">
@@ -148,6 +161,15 @@
                 perMove: 1,
                 focus  : 'center'
             }).mount();
+        });
+
+        const hamburgerButton = document.getElementById("hamburger-button");
+        const closeButton = document.getElementById("close-button");
+        hamburgerButton.addEventListener("click", () => {
+            document.getElementById("side-nav").style.width = "70vw";
+        });
+        closeButton.addEventListener("click", () => {
+            document.getElementById("side-nav").style.width = "0";
         });
     })
 </script>

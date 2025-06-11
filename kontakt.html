@@ -12,10 +12,10 @@
 <body>
 <div class="relative">
     <nav class="navbar">
-        <div class="navbar__logo">ARBORÉA</div>
-        <button class="navbar-burger">☰</button>
+        <div class="navbar__logo"><a href="index.html" class="">ARBORÉA</a></div>
+        <button id="hamburger-button" class="navbar-burger">☰</button>
         <ul class="navbar__links">
-            <li><a class="navbar-link" href="index.html">HOME</a></li>
+            <li><a class="navbar-link active" href="index.html">HOME</a></li>
             <li><a class="navbar-link" href="angebot.html">ANGEBOT</a></li>
             <li><a class="navbar-link" href="wellness.html">WELLNESS</a></li>
             <li><a class="navbar-link" href="ueber_uns.html">ÜBER UNS</a></li>
@@ -23,7 +23,19 @@
         <div class="navbar__button">
             <a href="kontakt.html">KONTAKT</a>
         </div>
+
     </nav>
+    <div id="side-nav" class="side-nav relative">
+        <p class="sidenav-title">ARBORÉA</p>
+        <p id="close-button" class="close-button">x</p>
+        <ul class="sidenav-links">
+            <li><a class="navbar-link active" href="index.html">HOME</a></li>
+            <li><a class="navbar-link active" href="angebot.html">ANGEBOT</a></li>
+            <li><a class="navbar-link active" href="wellness.html">WELLNESS</a></li>
+            <li><a class="navbar-link active" href="ueber_uns.html">ÜBER UNS</a></li>
+            <li><a class="navbar-link active" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+    </div>
     <div class="container">
         <div class="video-container" >
             <video autoplay loop muted playsinline class="video">
@@ -44,6 +56,15 @@
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.navbar-link').forEach(el => {
             el.style.setProperty('--label', `"${el.textContent}"`);
+        });
+
+        const hamburgerButton = document.getElementById("hamburger-button");
+        const closeButton = document.getElementById("close-button");
+        hamburgerButton.addEventListener("click", () => {
+            document.getElementById("side-nav").style.width = "70vw";
+        });
+        closeButton.addEventListener("click", () => {
+            document.getElementById("side-nav").style.width = "0";
         });
     })
 </script>

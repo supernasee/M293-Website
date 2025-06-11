@@ -46,14 +46,18 @@ a {
 }
 
 .navbar-burger {
-    background-color: #395439;
-    border: none;
-    color: white;
-    padding: .3rem .6rem;
-    border-radius: 12px;
+    background-color: #395439 !important;
+    border: none !important;
+    color: white !important;
+    padding: .3rem .6rem !important;
+    border-radius: 12px !important;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.5rem;
+    transition: background-color 0.3s ease !important;
+    font-size: 1.5rem !important;
+}
+
+.navbar-burger:focus {
+
 }
 
 @media (min-width: 768px) {
@@ -214,7 +218,7 @@ a {
     height: 15vh;
     width: 100vw;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
     box-sizing: border-box;
 }
 
@@ -243,4 +247,78 @@ a {
 
 .relative {
     position: relative;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: #395439;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 150;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidenav-title {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 60;
+}
+
+.sidenav-links {
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.sidenav-links li {
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.sidenav-links li:hover {
+    transform: translateX(1rem) ;
+    .sidenav-links li::before {
+        display: block;
+    }
+}
+
+.sidenav-links li::before {
+    content: "→";
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidenav-links li:hover::before {
+    opacity: 1;
 }

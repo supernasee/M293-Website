@@ -18,7 +18,7 @@
             </div>
             <nav class="navbar">
                 <div class="navbar__logo"><a href="index.html" class="">ARBORÉA</a></div>
-                <button class="navbar-burger">☰</button>
+                <button id="hamburger-button" class="navbar-burger">☰</button>
                 <ul class="navbar__links">
                     <li><a class="navbar-link active" href="index.html">HOME</a></li>
                     <li><a class="navbar-link" href="angebot.html">ANGEBOT</a></li>
@@ -30,6 +30,17 @@
                 </div>
 
             </nav>
+            <div id="side-nav" class="side-nav relative">
+                <p class="sidenav-title">ARBORÉA</p>
+                <p id="close-button" class="close-button">x</p>
+                <ul class="sidenav-links">
+                    <li><a class="navbar-link active" href="index.html">HOME</a></li>
+                    <li><a class="navbar-link active" href="angebot.html">ANGEBOT</a></li>
+                    <li><a class="navbar-link active" href="wellness.html">WELLNESS</a></li>
+                    <li><a class="navbar-link active" href="ueber_uns.html">ÜBER UNS</a></li>
+                    <li><a class="navbar-link active" href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
             <div class="container">
                 <div class="video-container" >
                     <video autoplay loop muted playsinline class="video">
@@ -93,6 +104,15 @@
                     text.classList.add("opacity-100");
                     text.classList.remove("opacity-0");
                 }, 50);
+
+                const hamburgerButton = document.getElementById("hamburger-button");
+                const closeButton = document.getElementById("close-button");
+                hamburgerButton.addEventListener("click", () => {
+                    document.getElementById("side-nav").style.width = "70vw";
+                });
+                closeButton.addEventListener("click", () => {
+                    document.getElementById("side-nav").style.width = "0";
+                });
             })
         </script>
     </body>

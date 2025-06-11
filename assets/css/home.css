@@ -4,7 +4,7 @@
 }
 
 .loader {
-    z-index: 50;
+    z-index: 200;
     position: fixed;
     top: 50%;
     text-align: center;
@@ -43,9 +43,6 @@
         background-position: left;
     }
 }
-
-
-
 
 .text-container {
     z-index: 10;

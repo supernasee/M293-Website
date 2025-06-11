@@ -50,6 +50,12 @@
     .content-padding {
         padding: 2rem 3rem;
     }
+    .custom-list li {
+        font-size: 1.2rem !important;
+    }
+    .custom-list li::before {
+        font-size: 1.2rem !important;
+    }
 }
 
 @media (min-width: 1536px) {
@@ -64,6 +70,12 @@
     }
     .content-padding {
         padding: 2rem 5rem;
+    }
+    .custom-list li {
+        font-size: 1.3rem !important;
+    }
+    .custom-list li::before {
+        font-size: 1.3rem !important;
     }
 }
 
@@ -156,7 +168,7 @@
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .custom-list li::before {
@@ -172,5 +184,16 @@
     color: #5d5c5a;
     text-align: center;
     line-height: 18px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: right;
+    color: #5d5c5a;
+}
+
+.attribution a {
+    font-size: 10px;
+    color: #5d5c5a;
 }
