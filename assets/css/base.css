@@ -303,9 +303,6 @@ a {
 
 .sidenav-links li:hover {
     transform: translateX(1rem) ;
-    .sidenav-links li::before {
-        display: block;
-    }
 }
 
 .sidenav-links li::before {
@@ -320,5 +317,13 @@ a {
 }
 
 .sidenav-links li:hover::before {
+    opacity: 1;
+}
+
+.sidenav-links li.active {
+    transform: translateX(1rem);
+}
+
+.sidenav-links li.active::before {
     opacity: 1;
 }
