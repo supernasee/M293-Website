@@ -182,8 +182,8 @@
 .profile-image {
     border-radius: 10px;
     object-fit: cover;
-    width: 60%;
-    height: 45vh;
+    width: 70%;
+    height: 40vh;
     transition: filter 0.3s ease;
 }
 
