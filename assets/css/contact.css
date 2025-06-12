@@ -1,0 +1,196 @@
+.site-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100vw;
+    transform: translateY(-50%);
+    margin-top: -10svh;
+    color: white;
+    z-index: 10;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content-text {
+    font-size: 1.1rem;
+    color: #3d3d3d;
+    font-weight: normal;
+}
+
+.content-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #fffbf7;
+    z-index: 10;
+    margin-top: -20svh;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.content-padding {
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .site-title {
+        font-size: 4rem;
+    }
+    .content-text {
+        font-size: 1.2rem;
+    }
+    .content-title {
+        font-size: 1.8rem;
+    }
+    .content-padding {
+        padding: 2rem 3rem;
+    }
+    .label {
+        font-size: 1.2rem;
+    }
+    .submit button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .site-title {
+        font-size: 5rem;
+    }
+    .content-text {
+        font-size: 1.3rem;
+    }
+    .content-title {
+        font-size: 2rem;
+    }
+    .content-padding {
+        padding: 2rem 5rem;
+    }
+    .label {
+        font-size: 1.3rem;
+    }
+    .submit button {
+        font-size: 1.3rem;
+    }
+}
+
+.grid {
+    justify-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+}
+
+.col-1,
+.col-2 {
+    width: 100%;
+    grid-row: 1;
+    text-align: left;
+}
+
+.col-1 {
+    border-right: 1px solid #395439;
+}
+
+.form {
+    width: 100%;
+}
+
+.label {
+    margin-top: 15px;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.field {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #395439;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: box-shadow 0.1s ease;
+}
+
+.field:focus {
+    outline: none;
+    box-shadow: 0 0 3px #395439;
+}
+
+.submit button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.submit {
+    margin-top: 15px;
+    width: 30%;
+    text-align: center;
+    background-color: #395439;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.submit::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    right: 0;
+    margin-right: -10%;
+    margin-left: 0;
+    background-color: #416941;
+    transition: width 0.4s ease;
+    border-radius: 15% 15% 15% 15% / 45% 45% 45% 45%;
+}
+
+.submit:hover::before {
+    left: 0;
+    margin-right: 0;
+    margin-left: -10%;
+    width: 120%;
+}
+
+.contact-container {
+    padding: 0 3rem;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+    }
+
+    .field {
+        width: 80%;
+    }
+
+    .submit {
+        width: 15%;
+    }
+}

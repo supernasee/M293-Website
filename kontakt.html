@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ARBORÉA</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,15 +39,39 @@
     </div>
     <div class="container">
         <div class="video-container" >
-            <video autoplay loop muted playsinline class="video">
-                <source src="assets/media/wald.mp4" type="video/mp4" />
-            </video>
+            <img src="assets/media/wald-2.jpg" alt="Foto einer Frau, die on zwei Händen am Rücken massiert wird." class="video">
         </div>
         <div class="image-overlay"></div>
+        <p class="site-title">Kontakt</p>
     </div>
-
-
-    <div class="footer-blur"></div>
+    <div class="content-container">
+        <div class="content-padding">
+            <p class="content-title">Melde dich bei uns!</p>
+            <p class="content-text">Du hast Fragen, möchtest einen Aufenthalt buchen oder einfach mehr über Arboréa erfahren? Wir freuen uns auf deine Nachricht. Egal ob per Formular, E-Mail oder Anruf – wir sind gerne für dich da.</p>
+            <div class="grid">
+                <div class="col-1">
+                    <form class="form">
+                        <label for="name" class="label">Name</label>
+                        <input type="text" id="name" name="name" class="field" placeholder="Dein Name">
+                        <label for="email" class="label">E-Mail</label>
+                        <input type="email" id="email" name="email" class="field" placeholder="Deine E-Mail-Adresse">
+                        <label for="message" class="label">Nachricht</label>
+                        <textarea id="message" name="message" class="field" placeholder="Deine Nachricht"></textarea>
+                        <div class="submit">
+                            <button type="submit">Senden</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <div class="contact-container">
+                        <p class="content-title">ARBORÉA</p>
+                        <p class="label">Email<br><a class="content-text" href="mailto:j.albers.inf24@stud.bbbaden.ch">j.albers.inf24@stud.bbbaden.ch</a></p>
+                        <p class="label">Telefon<br><a class="content-text" href="tel:+410764191019">+41 076 419 10 19</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="footer-logo">ARBORÉA</div>
         <div class="footer-copyright">© 2025 <a class="mail-link" href="mailto:j.albers.inf24@stud.bbbaden.ch">Jan Albers</a></div>
