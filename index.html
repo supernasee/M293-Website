@@ -55,7 +55,7 @@
                     </video>
                 </div>
                 <div class="image-overlay"></div>
-                <div id="text" class="text-container opacity-0">
+                <div id="title" class="text-container opacity-0">
                     <p class="title title-grow">ARBORÉA</p>
                     <p class="subtitle">Zurück zur Natur – zurück zu dir.</p>
                 </div>
@@ -105,12 +105,6 @@
                 document.querySelectorAll('.navbar-link').forEach(el => {
                     el.style.setProperty('--label', `"${el.textContent}"`);
                 });
-
-                const text = document.getElementById("text");
-                setTimeout(() => {
-                    text.classList.add("opacity-100");
-                    text.classList.remove("opacity-0");
-                }, 50);
 
                 const hamburgerButton = document.getElementById("hamburger-button");
                 const closeButton = document.getElementById("close-button");

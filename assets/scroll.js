@@ -1,4 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
+    const title = document.getElementById("title");
+    setTimeout(() => {
+        console.log("foo");
+        title.classList.add("opacity-100");
+        title.classList.remove("opacity-0");
+    }, 400);
+
     const observer = new IntersectionObserver(async (entries, observer) => {
         for (const entry of entries) {
             if (entry.isIntersecting) {
