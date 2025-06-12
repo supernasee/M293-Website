@@ -241,9 +241,9 @@
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border: 1px solid #5d5c5a;
+    border: 1px solid #3d3d3d;
     border-radius: 50%;
-    color: #5d5c5a;
+    color: #3d3d3d;
     text-align: center;
     line-height: 18px;
     font-size: 1.1rem;
@@ -252,12 +252,12 @@
 .attribution {
     font-size: 10px;
     text-align: right;
-    color: #5d5c5a;
+    color: #3d3d3d;
 }
 
 .attribution a {
     font-size: 10px;
-    color: #5d5c5a;
+    color: #3d3d3d;
 }
 
 .form {
